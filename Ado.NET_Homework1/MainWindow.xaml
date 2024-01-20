@@ -7,8 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="500" Width="800" Background="Red">
     <Grid>
-        <ComboBox Name="authorsComboBox" ItemsSource="{Binding authorsList}" Height="30" Width="100" Margin="275,24,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <ComboBox Name="categoriesComboBox" ItemsSource="{Binding categoriesList}" Height="30" Width="100" Margin="200 24 0 0"  VerticalAlignment="Top"/>
+        <Label Name="authorsLabel" Height="30" Width="100" Content="Authors" FontFamily="STENCIL" FontSize="16" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="-450 25 0 0"/>
+        <ComboBox Name="authorsComboBox" ItemsSource="{Binding authorsList}" Height="30" Width="100" Margin="220,24,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label Name="categoriesLabel" Height="30" Width="120" Content="Categories" FontFamily="STENCIL" FontSize="16" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="80 25 0 0"/>
+        <ComboBox Name="categoriesComboBox" ItemsSource="{Binding categoriesList}" Height="30" Width="100" Margin="300 24 0 0"  VerticalAlignment="Top"/>
         <TextBox Name="searchTextBox" Text="Enter book name" Height="40" Width="200" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="30,93,0,0" HorizontalContentAlignment="Left" Padding="10 0 0 0" VerticalContentAlignment="Center" FontSize="14"/>
         <Button Height="50" Width="90" VerticalAlignment="Top" Margin="-180 88 0 0" Content="SEARCH" Click="SearchBook" FontSize="14" FontFamily="STENCIL" Background="Yellow"/>
         <TextBox Name="deleteTextBox" Text="Enter book name" Height="40" Width="200" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="30,178,0,0" HorizontalContentAlignment="Left"  Padding="10 0 0 0"  VerticalContentAlignment="Center" FontSize="16"/>
