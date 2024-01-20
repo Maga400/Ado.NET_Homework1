@@ -1,0 +1,36 @@
+﻿<Window x:Class="Ado.NET_Homework1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ado.NET_Homework1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="800" Background="Red">
+    <Grid>
+        <ComboBox Name="authorsComboBox" ItemsSource="{Binding authorsList}" Height="30" Width="100" Margin="275,24,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <ComboBox Name="categoriesComboBox" ItemsSource="{Binding categoriesList}" Height="30" Width="100" Margin="200 24 0 0"  VerticalAlignment="Top"/>
+        <TextBox Name="searchTextBox" Text="Enter book name" Height="40" Width="200" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="30,93,0,0" HorizontalContentAlignment="Left" Padding="10 0 0 0" VerticalContentAlignment="Center" FontSize="14"/>
+        <Button Height="50" Width="90" VerticalAlignment="Top" Margin="-180 88 0 0" Content="SEARCH" Click="SearchBook" FontSize="14" FontFamily="STENCIL" Background="Yellow"/>
+        <TextBox Name="deleteTextBox" Text="Enter book name" Height="40" Width="200" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="30,178,0,0" HorizontalContentAlignment="Left"  Padding="10 0 0 0"  VerticalContentAlignment="Center" FontSize="16"/>
+        <Button Height="50" Width="90" VerticalAlignment="Top" Margin="-180 173 0 0" Content="DELETE" Click="DeleteBook" Foreground="Black" FontSize="14" FontFamily="STENCIL" Background="Yellow"/>
+        <TextBox Name="nameTextBox" Text="Enter old book name" Height="40" Width="200" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,93,180,0" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="10 0 0 0" FontSize="16"/>
+        <Button Height="50" Width="90" VerticalAlignment="Top" Margin="630 130 0 0" Content="UPDATE" Click="UpdateBook" FontSize="14" FontFamily="STENCIL" Background="Yellow"/>
+        <TextBox Name="updateTextBox" Text="Enter new book name" Height="40" Width="200" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,178,180,0" HorizontalContentAlignment="Left" Padding="10 0 0 0" VerticalContentAlignment="Center" FontSize="16"/>
+        <TextBox Name="idTextBox" Text="Enter id" Height="40" Width="120" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="30,265,0,0" HorizontalContentAlignment="Left" Padding="5 0 0 0" VerticalContentAlignment="Center" FontSize="13"/>
+        <TextBox Name="nameTextBox2" Text="Enter name" Height="40" Width="120" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="180,265,0,0" HorizontalContentAlignment="Left" Padding="5 0 0 0" VerticalContentAlignment="Center" FontSize="13"/>
+        <TextBox Name="pagesTextBox" Text="Enter pages" Height="40" Width="120" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,265,0,0" HorizontalContentAlignment="Left" Padding="5 0 0 0" VerticalContentAlignment="Center" FontSize="13"/>
+        <TextBox Name="yearPressTextBox" Text="Enter year press" Height="40" Width="120" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="495,265,0,0" HorizontalContentAlignment="Left" Padding="5 0 0 0" VerticalContentAlignment="Center" FontSize="13"/>
+        <TextBox Name="idThemesTextBox" Text="Enter id themes" Height="40" Width="120" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="645,265,0,0" HorizontalContentAlignment="Left" Padding="5 0 0 0" VerticalContentAlignment="Center" FontSize="13"/>
+
+        <TextBox Name="idCategoryTextBox" Text="Enter id category" Height="40" Width="120" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="30,340,0,0" HorizontalContentAlignment="Left" Padding="5 0 0 0" VerticalContentAlignment="Center" FontSize="13"/>
+        <TextBox Name="idAuthorTextBox" Text="Enter id author" Height="40" Width="120" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="180,340,0,0" HorizontalContentAlignment="Left" Padding="5 0 0 0" VerticalContentAlignment="Center" FontSize="13"/>
+        <TextBox Name="idPressTextBox" Text="Enter id press" Height="40" Width="120" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,340,0,0" HorizontalContentAlignment="Left" Padding="5 0 0 0" VerticalContentAlignment="Center" FontSize="13"/>
+        <TextBox Name="commentTextBox" Text="Enter comment" Height="40" Width="120" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="495,340,0,0" HorizontalContentAlignment="Left" Padding="5 0 0 0" VerticalContentAlignment="Center" FontSize="13"/>
+        <TextBox Name="quantityTextBox" Text="Enter quantity" Height="40" Width="120" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="645,340,0,0" HorizontalContentAlignment="Left" Padding="5 0 0 0" VerticalContentAlignment="Center" FontSize="13"/>
+        <Button Height="40" Width="100"  VerticalAlignment="Bottom" Margin="0 0 0 20" Content="ADD" Click="AddBook" FontSize="16" FontFamily="STENCIL" Background="Yellow"/>
+
+
+
+
+    </Grid>
+</Window>
